@@ -28,6 +28,9 @@ public class HomeController {
 
     @GetMapping("/")
     public String index() {
+        System.out.println("VCAP_SERVICES >>>>>>>>>>>>>>>>> "+System.getenv("VCAP_SERVICES"));
+        System.out.println("VCAP_APPLICATION >>>>>>>>>>>>>>>>> "+System.getenv("VCAP_APPLICATION"));
+
         return "index";
     }
 
