@@ -31,6 +31,10 @@ public class HomeController {
         System.out.println("VCAP_SERVICES >>>>>>>>>>>>>>>>> "+System.getenv("VCAP_SERVICES"));
         System.out.println("VCAP_APPLICATION >>>>>>>>>>>>>>>>> "+System.getenv("VCAP_APPLICATION"));
 
+        System.out.println("CF_INSTANCE_ADDR >>>>>>>>>>>>>>>>> "+System.getenv("CF_INSTANCE_ADDR"));
+        System.out.println("CF_INSTANCE_GUID >>>>>>>>>>>>>>>>> "+System.getenv("CF_INSTANCE_GUID"));
+        System.out.println("CF_INSTANCE_INTERNAL_IP >>>>>>>>>>>>>>>>> "+System.getenv("CF_INSTANCE_INTERNAL_IP"));
+
         return "index";
     }
 
