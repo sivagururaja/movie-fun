@@ -1,3 +1,6 @@
+logging:
+  level:
+    root: info
 spring:
   jpa:
     generate-ddl: true
